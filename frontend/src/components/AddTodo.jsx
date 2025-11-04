@@ -65,7 +65,7 @@ const AddTodo = ({ todos, setTodos }) => {
 
             if (res.ok) {
                 setTodos([]);
-                toast.error("All todos have been deleted.", { autoClose: 1500 });
+                toast.success("All todos have been deleted.", { autoClose: 1500 });
             } else {
                 console.error("Delete failed:", result);
                 toast.error("Failed to delete all todos!", { autoClose: 1500 });
